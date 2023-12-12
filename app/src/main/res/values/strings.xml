@@ -1,5 +1,5 @@
 <resources>
-
+    <string name="app_name">Aplicativo Gabriela latfy</string>
     <string name="txt_titulo">Agendamento</string>
     <string name="txt_hint__edit_nome">Primieiro Nome</string>
     <string name="txt_hint__edit_sobrenome">Sobrenome</string>

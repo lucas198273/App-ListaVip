@@ -32,38 +32,66 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:scaleType="centerCrop"
                     android:src="@drawable/logo_latfy"
-                    />
+                    android:importantForAccessibility="no" />
             </androidx.cardview.widget.CardView>
             
                 <TextView
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/txt_titulo"
                     android:textColor="@color/white"
-                    android:textSize="24dp"
+                    android:textSize="20sp"
                     android:textStyle="bold"
                     android:layout_margin="16dp"
                     />
-                <com.google.android.material.textfield.TextInputEditText
-                    style="@style/edit_text"
-                    android:drawableStart="@drawable/baseline_account_box_24"
-                    android:hint="@string/txt_hint__edit_nome"/>
-                <com.google.android.material.textfield.TextInputEditText
-                    style="@style/edit_text"
-                    android:drawableStart="@drawable/baseline_account_box_24"
-                    android:hint="@string/txt_hint__edit_sobrenome"/>
-                <com.google.android.material.textfield.TextInputEditText
-                    style="@style/edit_text"
-                    android:drawableStart="@drawable/baseline_phone_24"
-                    android:hint="@string/txt_hint__edit_telefone"/>
-                <com.google.android.material.textfield.TextInputEditText
-                    style="@style/edit_text"
-                    android:drawableStart="@drawable/baseline_insert_comment_24"
-                    android:hint="@string/txt_hint__edit_tipo_servico"/>
-            
+                <EditText
+                    android:id="@+id/edit_text_nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:hint="@string/txt_hint__edit_nome"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black"
+                    android:importantForAutofill="no" />
+                <EditText
+                    android:id="@+id/edit_text_sobrenome"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:hint="@string/txt_hint__edit_sobrenome"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black"
+                    android:importantForAutofill="no" />
+                <EditText
+                    android:id="@+id/edit_text_tipo_servico"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:hint="@string/txt_hint__edit_tipo_servico"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black"
+                    android:importantForAutofill="no" />
+                <EditText
+                    android:id="@+id/edit_text_telefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:hint="@string/txt_hint__edit_telefone"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black"
+                    android:importantForAutofill="no" />
+
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -71,12 +99,7 @@
                 android:layout_margin="32dp"
                 android:textColor="@color/white"
                 android:background="@drawable/shape_button"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Esqueci minha senha"
-                android:textSize="16sp"
-                android:textColor="@color/white"/>
+
 
 
         </LinearLayout>
