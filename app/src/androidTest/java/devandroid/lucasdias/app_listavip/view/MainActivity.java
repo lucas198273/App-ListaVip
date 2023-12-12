@@ -1,8 +1,10 @@
-package devandroid.lucasdias.app_listavip;
+package devandroid.lucasdias.app_listavip.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import devandroid.lucasdias.app_listavip.R;
 
 public class MainActivity extends AppCompatActivity {
 
